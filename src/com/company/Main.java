@@ -1,7 +1,5 @@
 package com.company; // базовый namespace - лучше задавать доменном-компании-наоборот
 
-import java.awt.*;
-
 public class Main {
 
     enum Color { // перечисления
@@ -11,8 +9,7 @@ public class Main {
         GOLD
     }
 
-    static void colorText (Color color)
-    {
+    static void colorText(Color color) {
         String colorText = "";
         switch (color) {
             case GREEN:
@@ -54,10 +51,10 @@ public class Main {
 //        else {
 //            System.out.println("Значение переменной a МЕНЬШЕ или РАВНО значения переменной b");
 //        }
-       // ifAge(23);
-       // caseAge(2);
-       // colorText(Color.GOLD);
-        smth(10);
+        // ifAge(23);
+        // caseAge(2);
+        // colorText(Color.GOLD);
+        votTakoeKino(2);
 
     }
 
@@ -78,33 +75,44 @@ public class Main {
         }
     }
 
-    static void caseAge (int colorCode) {
-            String colorText = "";
-            switch (colorCode) {
-                case 1:
-                    colorText = "Зелёный";
-                    break;
-                case 2:
-                    colorText = "Фиолетовый";
-                    break;
-                case 3:
-                    colorText = "Красный";
-                    break;
-                default:
-                    colorText = "Голубой";
-            }
-            System.out.print("Цвет: " + colorText);
+    static void caseAge(int colorCode) {
+        String colorText = "";
+        switch (colorCode) {
+            case 1:
+                colorText = "Зелёный";
+                break;
+            case 2:
+                colorText = "Фиолетовый";
+                break;
+            case 3:
+                colorText = "Красный";
+                break;
+            default:
+                colorText = "Голубой";
         }
+        System.out.print("Цвет: " + colorText);
+    }
 
-        static int test ( int a, int b) {
-            return a + b;
-        }
+    static int test(int a, int b) {
+        return a + b;
+    }
 
-        static void smth(int score)
-        {
-            if (score < 1 || score > 9)
-            {
-                System.out.println("Ошибочное значение счета [1;9] " + score);
+    static void votTakoeKino(int score) {
+        if (score < 1 || score > 5) {
+            System.out.println("Ошибочное значение счета [1;9] " + score);
+        } else {
+            if (score == 1) {
+                System.out.println("Хреновое кино:  " + score);
+            } else if (score == 2) {
+                System.out.println("Плохое кино:  " + score);
+            } else if (score == 3) {
+                System.out.println("Так себе кино:  " + score);
+            } else if (score == 4) {
+                System.out.println("Нормальное кино:  " + score);
+            } else if (score == 5) {
+                System.out.println("Хорошее кино:  " + score);
             }
         }
     }
+}
+
