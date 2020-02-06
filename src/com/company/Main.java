@@ -54,9 +54,10 @@ public class Main {
 //        else {
 //            System.out.println("Значение переменной a МЕНЬШЕ или РАВНО значения переменной b");
 //        }
-        ifAge(23);
-        caseAge(2);
-        colorText(Color.GOLD);
+       // ifAge(23);
+       // caseAge(2);
+       // colorText(Color.GOLD);
+        smth(10);
 
     }
 
@@ -97,5 +98,13 @@ public class Main {
 
         static int test ( int a, int b) {
             return a + b;
+        }
+
+        static void smth(int score)
+        {
+            if (score < 1 || score > 9)
+            {
+                System.out.println("Ошибочное значение счета [1;9] " + score);
+            }
         }
     }
