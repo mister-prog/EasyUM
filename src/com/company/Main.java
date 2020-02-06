@@ -30,7 +30,6 @@ public class Main {
         System.out.print("\nЦвет: " + colorText);
     }
 
-
     public static void main(String[] args) {
         // write your code here
 //        String str = "Result: ";
@@ -57,7 +56,7 @@ public class Main {
 //        }
         ifAge(23);
         caseAge(2);
-        colorText(Color.RED);
+        colorText(Color.GOLD);
 
     }
 
@@ -78,8 +77,7 @@ public class Main {
         }
     }
 
-    static void caseAge (int colorCode)
-        {
+    static void caseAge (int colorCode) {
             String colorText = "";
             switch (colorCode) {
                 case 1:
@@ -97,9 +95,7 @@ public class Main {
             System.out.print("Цвет: " + colorText);
         }
 
-
-
-        static int test ( int a, int b){
+        static int test ( int a, int b) {
             return a + b;
         }
     }
