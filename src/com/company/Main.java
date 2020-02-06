@@ -4,6 +4,33 @@ import java.awt.*;
 
 public class Main {
 
+    enum Color { // перечисления
+        GREEN,
+        VIOLET,
+        RED,
+        GOLD
+    }
+
+    static void colorText (Color color)
+    {
+        String colorText = "";
+        switch (color) {
+            case GREEN:
+                colorText = "Зелёный";
+                break;
+            case VIOLET:
+                colorText = "Фиолетовый";
+                break;
+            case RED:
+                colorText = "Красный";
+                break;
+            default:
+                colorText = "Голубой";
+        }
+        System.out.print("\nЦвет: " + colorText);
+    }
+
+
     public static void main(String[] args) {
         // write your code here
 //        String str = "Result: ";
@@ -28,10 +55,13 @@ public class Main {
 //        else {
 //            System.out.println("Значение переменной a МЕНЬШЕ или РАВНО значения переменной b");
 //        }
+        ifAge(23);
+        caseAge(2);
+        colorText(Color.RED);
 
+    }
 
-       /* int age = 17;
-
+    static void ifAge(int age) {
         System.out.println("Возраст человека: " + age + " года/лет");
 
         if (age < 50) {
@@ -45,30 +75,31 @@ public class Main {
             System.out.println("Цвет одежды: красный");//3
         } else {
             System.out.println("Вот ты долгожитель!");
-        }*/
-
-        int colorCode = 4;
-
-        String colorText ="";
-        switch (colorCode)
-        {
-            case 1:
-                colorText = "Зелёный";
-                break;
-            case 2:
-                colorText = "Фиолетовый";
-                break;
-            case 3:
-                colorText = "Красный";
-                break;
-            default:
-                colorText = "Голубой";
         }
-        System.out.print("Цвет: " + colorText);
     }
 
+    static void caseAge (int colorCode)
+        {
+            String colorText = "";
+            switch (colorCode) {
+                case 1:
+                    colorText = "Зелёный";
+                    break;
+                case 2:
+                    colorText = "Фиолетовый";
+                    break;
+                case 3:
+                    colorText = "Красный";
+                    break;
+                default:
+                    colorText = "Голубой";
+            }
+            System.out.print("Цвет: " + colorText);
+        }
 
-    static int test(int a, int b) {
-        return a + b;
+
+
+        static int test ( int a, int b){
+            return a + b;
+        }
     }
-}
