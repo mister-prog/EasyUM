@@ -30,23 +30,43 @@ public class Main {
 //        }
 
 
-        int age = 17;
+       /* int age = 17;
 
         System.out.println("Возраст человека: " + age + " года/лет");
 
         if (age < 50) {
             System.out.println("Ребенок");
-            System.out.println("Цвет одежды: зеленый");
+            System.out.println("Цвет одежды: зеленый");//1
         } else if (age < 80) {
             System.out.println("Подросток");
-            System.out.println("Цвет одежды: фиолетовый");
+            System.out.println("Цвет одежды: фиолетовый");//2
         } else if (age < 100) {
             System.out.println("Взрослый");
-            System.out.println("Цвет одежды: красный");
+            System.out.println("Цвет одежды: красный");//3
         } else {
             System.out.println("Вот ты долгожитель!");
+        }*/
+
+        int colorCode = 4;
+
+        String colorText ="";
+        switch (colorCode)
+        {
+            case 1:
+                colorText = "Зелёный";
+                break;
+            case 2:
+                colorText = "Фиолетовый";
+                break;
+            case 3:
+                colorText = "Красный";
+                break;
+            default:
+                colorText = "Голубой";
         }
+        System.out.print("Цвет: " + colorText);
     }
+
 
     static int test(int a, int b) {
         return a + b;
