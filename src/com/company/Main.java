@@ -5,7 +5,7 @@ import java.awt.*;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+        // write your code here
 //        String str = "Result: ";
 //        char c = '%';
 //        int a = 5;
@@ -30,31 +30,25 @@ public class Main {
 //        }
 
 
-
-        int age = 101;
+        int age = 17;
 
         System.out.println("Возраст человека: " + age + " года/лет");
 
-        if (age < 50)
-        {
+        if (age < 50) {
             System.out.println("Ребенок");
-        }
-        else if (age < 80)
-        {
+            System.out.println("Цвет одежды: зеленый");
+        } else if (age < 80) {
             System.out.println("Подросток");
-        }
-        else if (age < 100)
-        {
+            System.out.println("Цвет одежды: фиолетовый");
+        } else if (age < 100) {
             System.out.println("Взрослый");
-        }
-        else
-        {
+            System.out.println("Цвет одежды: красный");
+        } else {
             System.out.println("Вот ты долгожитель!");
         }
     }
 
-   static int test (int a, int b)
-    {
+    static int test(int a, int b) {
         return a + b;
     }
 }
