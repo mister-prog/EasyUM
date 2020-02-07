@@ -1,8 +1,9 @@
 package com.company; // базовый namespace - лучше задавать доменном-компании-наоборот
-import  java.util.Scanner;
+
+import java.util.Scanner;
 
 public class Main {
-/*
+
     enum Color { // перечисления
         GREEN,
         VIOLET,
@@ -10,15 +11,12 @@ public class Main {
         GOLD
     }
 
-    {
-        int a = 6;
-        String str = "Hello, Friend!";
-        System.out.println (a);
-    }*/
+//    { //видимость переменных - внутри фигурн. скобок
+//        int a = 6;
+//        String str = "Hello, Friend!";
+//        System.out.println (a);
+//    }
 
-
-
-/*
     static void colorText(Color color) {
         String colorText = "";
         switch (color) {
@@ -35,7 +33,7 @@ public class Main {
                 colorText = "Голубой";
         }
         System.out.print("\nЦвет: " + colorText);
-    }*/
+    }
 
     public static void main(String[] args) {
         // write your code here
@@ -64,17 +62,17 @@ public class Main {
         // ifAge(23);
         // caseAge(2);
         // colorText(Color.GOLD);
-        votTakoeKino();
-
-
+        //votTakoeKino();
+        //colorText(Color.GREEN);
+        caseKino();
     }
+
     static void votTakoeKino() {
         Scanner in = new Scanner(System.in);
         System.out.print("Input a number (1-5): ");
         int score = in.nextInt();
 
         //System.out.printf("Your number: %d \n", num);
-
 
         if (score < 1 || score > 5) {
             System.out.println("Ошибочное значение счета [1;9] " + score);
@@ -90,6 +88,35 @@ public class Main {
             } else if (score == 5) {
                 System.out.println("Хорошее кино:  " + score);
             }
+        }
+        in.close();
+    }
+
+    static void caseKino() {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Input a number (1-5): ");
+        int val = in.nextInt();
+
+        //System.out.printf("Your number: %d \n", num);
+
+        switch (val) {
+            case 1:
+                System.out.println("Хреновое кино:  " + val);
+                break;
+            case 2:
+                System.out.println("Плохое кино:  " + val);
+                break;
+                case 3:
+                System.out.println("Так себе кино:  " + val);
+                break;
+            case 4:
+                System.out.println("Нормальное кино:  " + val);
+                break;
+            case 5:
+                System.out.println("Хорошее кино:  " + val);
+                break;
+            default:
+                System.out.println("Ты чё ввёл?!\nНеправильно набран номер:  " + val);
         }
         in.close();
     }
@@ -134,7 +161,6 @@ public class Main {
         return a + b;
     }
 */
-
 
 
 }
