@@ -1,7 +1,8 @@
 package com.company; // базовый namespace - лучше задавать доменном-компании-наоборот
+import  java.util.Scanner;
 
 public class Main {
-
+/*
     enum Color { // перечисления
         GREEN,
         VIOLET,
@@ -9,6 +10,15 @@ public class Main {
         GOLD
     }
 
+    {
+        int a = 6;
+        String str = "Hello, Friend!";
+        System.out.println (a);
+    }*/
+
+
+
+/*
     static void colorText(Color color) {
         String colorText = "";
         switch (color) {
@@ -25,7 +35,7 @@ public class Main {
                 colorText = "Голубой";
         }
         System.out.print("\nЦвет: " + colorText);
-    }
+    }*/
 
     public static void main(String[] args) {
         // write your code here
@@ -42,7 +52,7 @@ public class Main {
 //        /*System.out.println("Переменная а равна " + a + "\nПеременная b равна " + b
 //                + "\nСумма a и b равна " + (a + b));
 //
-//        System.out.println("Теперь выводим возвращаемое значение метода sum: " + test(a,b));*/
+//        System.out.println("Теперь выводим возвращаемое значение метода sum: " + test(a,b));
 
 //
 //        if (a > b) {
@@ -54,9 +64,36 @@ public class Main {
         // ifAge(23);
         // caseAge(2);
         // colorText(Color.GOLD);
-        votTakoeKino(2);
+        votTakoeKino();
+
 
     }
+    static void votTakoeKino() {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Input a number (1-5): ");
+        int score = in.nextInt();
+
+        //System.out.printf("Your number: %d \n", num);
+
+
+        if (score < 1 || score > 5) {
+            System.out.println("Ошибочное значение счета [1;9] " + score);
+        } else {
+            if (score == 1) {
+                System.out.println("Хреновое кино:  " + score);
+            } else if (score == 2) {
+                System.out.println("Плохое кино:  " + score);
+            } else if (score == 3) {
+                System.out.println("Так себе кино:  " + score);
+            } else if (score == 4) {
+                System.out.println("Нормальное кино:  " + score);
+            } else if (score == 5) {
+                System.out.println("Хорошее кино:  " + score);
+            }
+        }
+        in.close();
+    }
+    /*
 
     static void ifAge(int age) {
         System.out.println("Возраст человека: " + age + " года/лет");
@@ -96,23 +133,9 @@ public class Main {
     static int test(int a, int b) {
         return a + b;
     }
+*/
 
-    static void votTakoeKino(int score) {
-        if (score < 1 || score > 5) {
-            System.out.println("Ошибочное значение счета [1;9] " + score);
-        } else {
-            if (score == 1) {
-                System.out.println("Хреновое кино:  " + score);
-            } else if (score == 2) {
-                System.out.println("Плохое кино:  " + score);
-            } else if (score == 3) {
-                System.out.println("Так себе кино:  " + score);
-            } else if (score == 4) {
-                System.out.println("Нормальное кино:  " + score);
-            } else if (score == 5) {
-                System.out.println("Хорошее кино:  " + score);
-            }
-        }
-    }
+
+
 }
 
