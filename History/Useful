@@ -1,0 +1,14 @@
+//сравнение строк: score и "1"
+score.equals("1")
+
+score == "1" - всегда false, т.к. сравниваются ссылки на строки, а не сами строки
+//-------------------------------------------
+
+//Считывание строк с клавиатуры
+import java.util.Scanner; // подключаем класс Scanner
+
+Scanner in = new Scanner(System.in);
+System.out.println("Введите оценку фильма (1-5), чтобы узнать рецензию: ");
+String score = in.nextLine();
+...
+in.close()//закрываем поток

@@ -1,6 +1,5 @@
 package com.company; // базовый namespace - лучше задавать доменном-компании-наоборот
 
-import java.awt.*;
 import java.util.Scanner;
 
 public class Main {
@@ -22,30 +21,19 @@ public class Main {
                     + "\nВведите оценку от 1 до 5: ");
             score = in.nextLine();
         }
-        //System.out.println("Вот оценка " + score);
-        int newVal = Integer.parseInt(score);
 
-        if (newVal == 1)
-        {
+        if (score.equals("1")) {
             System.out.println("Оценка: " + score + "\nОтвратительный фильм. Смотреть не стоит");
-        }
-        else if (newVal == 2)
-        {
+        } else if (score.equals("2")) {
             System.out.println("Оценка: " + score + "\nПлохой фильм. Зря потраченное время");
-        }
-        else if (newVal == 3)
-        {
+        } else if (score.equals("3")) {
             System.out.println("Оценка: " + score + "\nТак себе фильм. На один раз");
-        }
-        else if (newVal == 4)
-        {
+        } else if (score.equals("4")) {
             System.out.println("Оценка: " + score + "\nХороший фильм. Идея интересная");
-        }
-        else if (newVal == 5)
-        {
+        } else if (score.equals("5")) {
             System.out.println("Оценка: " + score + "\nОтличный фильм! В личную копилку");
         }
-       in.close();
+        in.close();
     }
 
     //проверяем, парсится ли строка в число
