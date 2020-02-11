@@ -35,7 +35,7 @@ public class Main {
         in.close();
     }
 
-    static void switchCaseKino() {
+    static void kinoman() {
         Scanner in = new Scanner(System.in);
         System.out.print("Input a number (1-5): ");
         int val = in.nextInt();
@@ -49,7 +49,7 @@ public class Main {
             case 2:
                 System.out.println("Плохое кино:  " + val);
                 break;
-                case 3:
+            case 3:
                 System.out.println("Так себе кино:  " + val);
                 break;
             case 4:
@@ -62,6 +62,55 @@ public class Main {
                 System.out.println("Ты чё ввёл?!\nНеправильно набран номер:  " + val);
         }
         in.close();
+    }
+
+    //проверяем, парсится ли строка в число
+    public static boolean isInt(String string) {
+        try {
+            Integer.parseInt(string);
+        } catch (Exception e) {
+            return false;
+        }
+        return true;
+    }
+
+    public static void switchCaseKino() {
+        System.out.println("Введите оценку фильма (1-5), чтобы узнать рецензию: ");
+
+        Scanner in = new Scanner(System.in);
+        String value = in.nextLine();
+
+        while (!(isInt(value)) || Integer.parseInt(value) > 5 || Integer.parseInt(value) < 1) {
+            System.out.println("Вы ввели некорректную оценку: " + value
+                    + "\nВведите оценку от 1 до 5: ");
+            value = in.nextLine();
+        }
+
+        //int intVal = Integer.parseInt(value);
+        switch (value) {
+            case "1":
+                System.out.println("Оценка: " + value + "\nОтвратительный фильм. Смотреть не стоит");
+                break;
+
+            case "2":
+                System.out.println("Оценка: " + value + "\nПлохой фильм. Зря потраченное время");
+                break;
+
+            case "3":
+                System.out.println("Оценка: " + value + "\nТак себе фильм. На один раз");
+                break;
+
+            case "4":
+                System.out.println("Оценка: " + value + "\nХороший фильм. Идея интересная");
+                break;
+
+            case "5":
+                System.out.println("Оценка: " + value + "\nОтличный фильм! В личную копилку");
+                break;
+
+            default:
+                System.out.println("Возникла непредвиденная ошибка. Пожалуйста, обратитесь к администратору");
+        }
     }
 }
 
