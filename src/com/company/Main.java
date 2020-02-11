@@ -1,5 +1,6 @@
 package com.company; // базовый namespace - лучше задавать доменном-компании-наоборот
 
+import java.awt.*;
 import java.util.Scanner;
 
 public class Main {
@@ -8,6 +9,8 @@ public class Main {
     public static void main(String[] args) {
         ifElseKino();
         //switchCaseKino();
+        char ch =235;
+        System.out.println("Это char: " + ch);
     }
 
     static void ifElseKino() {
