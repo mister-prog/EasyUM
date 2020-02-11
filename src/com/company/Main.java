@@ -111,6 +111,7 @@ public class Main {
             default:
                 System.out.println("Возникла непредвиденная ошибка. Пожалуйста, обратитесь к администратору");
         }
+        in.close();
     }
 }
 
