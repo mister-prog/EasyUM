@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d094e78-b847-4ffa-8ec5-09ce95046645" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Lesson3/MainIf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lesson3/MainTypes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lesson3/MainInput.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaEasyUM-2/Lesson3/MainIf.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaEasyUM-2/Lesson3/MainIf.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaEasyUM-2/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaEasyUM-2/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lesson3/MainIf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lesson3/MainIf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +53,7 @@
       <recent name="Lesson3" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MainIf">
+  <component name="RunManager" selected="Application.MainInput">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
       <module name="JavaEasyUM-2" />
@@ -63,6 +66,19 @@
     </configuration>
     <configuration name="MainIf" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Lesson3.MainIf" />
+      <module name="JavaEasyUM-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Lesson3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainInput" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Lesson3.MainInput" />
       <module name="JavaEasyUM-2" />
       <extension name="coverage">
         <pattern>
@@ -100,20 +116,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scratch" type="Java Scratch" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Scratch" />
-      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/usefulScratch.java" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainInput" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.MainIf" />
         <item itemvalue="Application.MainTypes" />
         <item itemvalue="Application.MainLesson3" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Java Scratch.Scratch" />
       </list>
     </recent_temporary>
   </component>
@@ -156,22 +165,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="62" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1580840755975" />
-    <state width="1311" height="165" key="GridCell.Tab.0.bottom" timestamp="1581442758869">
+    <state width="1311" height="165" key="GridCell.Tab.0.bottom" timestamp="1581443981452">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1311" height="165" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1581442758869" />
-    <state width="1311" height="165" key="GridCell.Tab.0.center" timestamp="1581442758869">
+    <state width="1311" height="165" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1581443981452" />
+    <state width="1311" height="165" key="GridCell.Tab.0.center" timestamp="1581443981452">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1311" height="165" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1581442758869" />
-    <state width="1311" height="165" key="GridCell.Tab.0.left" timestamp="1581442758868">
+    <state width="1311" height="165" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1581443981452" />
+    <state width="1311" height="165" key="GridCell.Tab.0.left" timestamp="1581443981452">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1311" height="165" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1581442758868" />
-    <state width="1311" height="165" key="GridCell.Tab.0.right" timestamp="1581442758869">
+    <state width="1311" height="165" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1581443981451" />
+    <state width="1311" height="165" key="GridCell.Tab.0.right" timestamp="1581443981452">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1311" height="165" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1581442758869" />
+    <state width="1311" height="165" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1581443981452" />
     <state x="184" y="5" key="SettingsEditor" timestamp="1580838507153">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

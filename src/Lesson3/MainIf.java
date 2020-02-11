@@ -22,12 +22,12 @@ public class MainIf {
         System.out.println("Деление на нуль\nresult = " + result);
         получаем Exception*/
 
-        int i = 7, j = 8, k = 0;
-        if (k != 0) {
+        int i = -176, j = 8, k = 2;
+        if ((i > 0) && (j > 0) && (k != 0)) {
             double result = (i + j) / k;
             System.out.println("Деление на нуль\nresult = " + result);
         } else {
-            System.out.println("Делить на нуль нельзя! k = " + k);
+            System.out.println("Условия не соблюдены!");
         }
     }
 }
