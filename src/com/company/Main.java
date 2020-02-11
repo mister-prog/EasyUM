@@ -1,67 +1,51 @@
 package com.company; // базовый namespace - лучше задавать доменном-компании-наоборот
 
+import java.awt.*;
 import java.util.Scanner;
 
 public class Main {
 
 
     public static void main(String[] args) {
-        //ifElseKino();
-        switchCaseKino();
+        ifElseKino();
+        //switchCaseKino();
     }
 
     static void ifElseKino() {
         Scanner in = new Scanner(System.in);
-        System.out.print("Input a number (1-5): ");
-        int score = in.nextInt();
+        System.out.println("Введите оценку фильма (1-5), чтобы узнать рецензию: ");
+        String score = in.nextLine();
 
-        //System.out.printf("Your number: %d \n", num);
 
-        if (score < 1 || score > 5) {
-            System.out.println("Ошибочное значение счета [1;9] " + score);
-        } else {
-            if (score == 1) {
-                System.out.println("Хреновое кино:  " + score);
-            } else if (score == 2) {
-                System.out.println("Плохое кино:  " + score);
-            } else if (score == 3) {
-                System.out.println("Так себе кино:  " + score);
-            } else if (score == 4) {
-                System.out.println("Нормальное кино:  " + score);
-            } else if (score == 5) {
-                System.out.println("Хорошее кино:  " + score);
-            }
+        while (!(isInt(score)) || Integer.parseInt(score) > 5 || Integer.parseInt(score) < 1) {
+            System.out.println("Вы ввели некорректную оценку: " + score
+                    + "\nВведите оценку от 1 до 5: ");
+            score = in.nextLine();
         }
-        in.close();
-    }
+        //System.out.println("Вот оценка " + score);
+        int newVal = Integer.parseInt(score);
 
-    static void kinoman() {
-        Scanner in = new Scanner(System.in);
-        System.out.print("Input a number (1-5): ");
-        int val = in.nextInt();
-
-        //System.out.printf("Your number: %d \n", num);
-
-        switch (val) {
-            case 1:
-                System.out.println("Хреновое кино:  " + val);
-                break;
-            case 2:
-                System.out.println("Плохое кино:  " + val);
-                break;
-            case 3:
-                System.out.println("Так себе кино:  " + val);
-                break;
-            case 4:
-                System.out.println("Нормальное кино:  " + val);
-                break;
-            case 5:
-                System.out.println("Хорошее кино:  " + val);
-                break;
-            default:
-                System.out.println("Ты чё ввёл?!\nНеправильно набран номер:  " + val);
+        if (newVal == 1)
+        {
+            System.out.println("Оценка: " + score + "\nОтвратительный фильм. Смотреть не стоит");
         }
-        in.close();
+        else if (newVal == 2)
+        {
+            System.out.println("Оценка: " + score + "\nПлохой фильм. Зря потраченное время");
+        }
+        else if (newVal == 3)
+        {
+            System.out.println("Оценка: " + score + "\nТак себе фильм. На один раз");
+        }
+        else if (newVal == 4)
+        {
+            System.out.println("Оценка: " + score + "\nХороший фильм. Идея интересная");
+        }
+        else if (newVal == 5)
+        {
+            System.out.println("Оценка: " + score + "\nОтличный фильм! В личную копилку");
+        }
+       in.close();
     }
 
     //проверяем, парсится ли строка в число

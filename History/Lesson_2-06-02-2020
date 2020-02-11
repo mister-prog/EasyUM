@@ -77,3 +77,33 @@ static void ifAge(int age) {
             colorText(Color.GREEN);
             caseKino();
         }
+
+       //Рецензия на кино (считываем оценку, валидируем)
+        static void kinoman() {
+                Scanner in = new Scanner(System.in);
+                System.out.print("Input a number (1-5): ");
+                int val = in.nextInt();
+
+                //System.out.printf("Your number: %d \n", num);
+
+                switch (val) {
+                    case 1:
+                        System.out.println("Хреновое кино:  " + val);
+                        break;
+                    case 2:
+                        System.out.println("Плохое кино:  " + val);
+                        break;
+                    case 3:
+                        System.out.println("Так себе кино:  " + val);
+                        break;
+                    case 4:
+                        System.out.println("Нормальное кино:  " + val);
+                        break;
+                    case 5:
+                        System.out.println("Хорошее кино:  " + val);
+                        break;
+                    default:
+                        System.out.println("Ты чё ввёл?!\nНеправильно набран номер:  " + val);
+                }
+                in.close();
+            }
