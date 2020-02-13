@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d094e78-b847-4ffa-8ec5-09ce95046645" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Lesson4/MainMax.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lesson4/MainColor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,13 +54,13 @@
       <recent name="Lesson3" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MainMax">
-    <configuration name="MainFor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Lesson3.MainFor" />
+  <component name="RunManager" selected="Application.MainColor">
+    <configuration name="MainColor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Lesson4.MainColor" />
       <module name="JavaEasyUM-2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Lesson3.*" />
+          <option name="PATTERN" value="Lesson4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,11 +122,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainColor" />
         <item itemvalue="Application.MainMax" />
         <item itemvalue="Application.MainMethod" />
         <item itemvalue="Application.MainTypes" />
         <item itemvalue="Application.MainWhile" />
-        <item itemvalue="Application.MainFor" />
       </list>
     </recent_temporary>
   </component>
@@ -183,22 +183,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="62" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1580840755975" />
-    <state width="1311" height="165" key="GridCell.Tab.0.bottom" timestamp="1581617182631">
+    <state width="1311" height="165" key="GridCell.Tab.0.bottom" timestamp="1581617788312">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1311" height="165" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1581617182631" />
-    <state width="1311" height="165" key="GridCell.Tab.0.center" timestamp="1581617182631">
+    <state width="1311" height="165" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1581617788312" />
+    <state width="1311" height="165" key="GridCell.Tab.0.center" timestamp="1581617788312">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1311" height="165" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1581617182631" />
-    <state width="1311" height="165" key="GridCell.Tab.0.left" timestamp="1581617182631">
+    <state width="1311" height="165" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1581617788312" />
+    <state width="1311" height="165" key="GridCell.Tab.0.left" timestamp="1581617788311">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1311" height="165" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1581617182631" />
-    <state width="1311" height="165" key="GridCell.Tab.0.right" timestamp="1581617182631">
+    <state width="1311" height="165" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1581617788311" />
+    <state width="1311" height="165" key="GridCell.Tab.0.right" timestamp="1581617788312">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1311" height="165" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1581617182631" />
+    <state width="1311" height="165" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1581617788312" />
     <state width="1311" height="208" key="GridCell.Tab.1.bottom" timestamp="1581445853407">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
