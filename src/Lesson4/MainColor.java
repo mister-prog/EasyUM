@@ -3,7 +3,7 @@ package Lesson4;
 public class MainColor {
     public static void main(String[] args)
     {
-        for (int colorCode = 1; colorCode <= 5; colorCode++)
+        for (int colorCode = 0; colorCode <= 5; colorCode++)
         {
             System.out.println("code = " + colorCode + " text = "  + getColorText(colorCode));
         }
