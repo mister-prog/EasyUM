@@ -7,11 +7,11 @@ public class MainTypes {
         //double >> float >> long >> int >> char
 
         //приведение без проблем - от меньших типов к большим
-        int a = 9 * 7 - 12;
+        /*int a = 9 * 7 - 12;
         long b = a * 3;
-        double c = b;
+        double c = b;*/
 
-        //huliganstvo(); //ругается матом )))
+        huliganstvo(); //ругается матом )))
         toDouble();
     }
 
@@ -20,7 +20,12 @@ public class MainTypes {
         char h = 1061;
         char y = 1091;
         char z = 1081;
-        System.out.printf("Хулиганская программка =)\nВыводит нехорошее слово: %c%c%c ", h ,y ,z );
+        char n = 'Ё';
+        char m = 'м';
+        char p = 'о';
+        char t = 'ё';
+        System.out.printf("Хулиганская программка =)\nВыводит нехорошее слово: %c%c%c\n", h ,y ,z );
+        System.out.println(n + m + p + t);
     }
     public static void toDouble ()
     {
