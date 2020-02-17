@@ -8,15 +8,6 @@ public class Homework4 {
         compicGame();
     }
 
-    public static boolean isInt(String string) {
-        try {
-            Integer.parseInt(string);
-        } catch (Exception e) {
-            return false;
-        }
-        return true;
-    }
-
     public static void compicGame() {
         System.out.println("Привет! Я - Компик =) Давай поиграем?\n\nЯ загадал целое число от 1 до 100\nПопробуй отгадать, а я подскажу ;)");
 
@@ -42,10 +33,20 @@ public class Homework4 {
 
         String inputString = in.nextLine();
 
+        //todo как сократить parseInt()?
         while (!(isInt(inputString))) {
             System.out.println("Вы ввели число некорректно!\nПожалуйста, повторите ввод");
             inputString = in.nextLine();
         }
         return Integer.parseInt(inputString);
+    }
+
+    public static boolean isInt(String string) {
+        try {
+            Integer.parseInt(string);
+        } catch (Exception e) {
+            return false;
+        }
+        return true;
     }
 }
