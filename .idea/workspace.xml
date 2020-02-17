@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d094e78-b847-4ffa-8ec5-09ce95046645" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaEasyUM-2/mr/Prog/Homework4.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/HomeWork/Homework4Quadratics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeWork/Homework4Quadratics.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -72,8 +70,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/HomeWork/Homework4Quadratics.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="35" column="33" lean-forward="true" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
+            <state relative-caret-position="248">
+              <caret line="42" column="33" lean-forward="true" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
               <folding>
                 <element signature="e#490#491#0" expanded="true" />
                 <element signature="e#517#518#0" expanded="true" />
@@ -334,6 +332,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1592" y="-14" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -567,8 +566,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HomeWork/Homework4Quadratics.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="35" column="33" lean-forward="true" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
+        <state relative-caret-position="248">
+          <caret line="42" column="33" lean-forward="true" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
           <folding>
             <element signature="e#490#491#0" expanded="true" />
             <element signature="e#517#518#0" expanded="true" />
