@@ -3,7 +3,7 @@ package mr.Prog;
 import java.util.Scanner;
 import java.util.concurrent.ThreadLocalRandom;
 
-public class Homework4 {
+public class Homework4guessNumber {
     public static void main(String[] args) {
         compicGame();
     }
