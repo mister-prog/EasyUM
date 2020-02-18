@@ -2,7 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d094e78-b847-4ffa-8ec5-09ce95046645" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaEasyUM-2/HomeWork/HWTasks" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaEasyUM-2/HomeWork/Homework1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaEasyUM-2/HomeWork/Homework2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaEasyUM-2/HomeWork/Homework4Quadratics.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaEasyUM-2/HomeWork/Homework4Ranges.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaEasyUM-2/HomeWork/Homework4guessNumber.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaEasyUM-2/Lesson4/MainRandom.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaEasyUM-2/Usefuls/UsefulMethods.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HomeWork/HWTasks" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HomeWork/Homework1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HomeWork/Homework2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HomeWork/Homework4Quadratics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HomeWork/Homework4Ranges.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HomeWork/Homework4guessNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lesson4/MainRandom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Usefuls/UsefulMethods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/History/QUESTIONS" beforeDir="false" afterPath="$PROJECT_DIR$/History/QUESTIONS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/History/Useful" beforeDir="false" afterPath="$PROJECT_DIR$/History/Useful" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaEasyUM-2/Lesson3/MainFor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaEasyUM-2/Lesson3/MainFor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaEasyUM-2/Lesson3/MainIf.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaEasyUM-2/Lesson3/MainIf.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaEasyUM-2/Lesson3/MainLesson3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaEasyUM-2/Lesson3/MainLesson3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaEasyUM-2/META-INF/JavaEasyUM-2.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaEasyUM-2/META-INF/JavaEasyUM-2.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaEasyUM-2/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaEasyUM-2/com/company/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +46,11 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>whi</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -49,17 +78,23 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="Usefuls" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="Lesson3" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ActualCode\EasyUM\src\HomeWork" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.MainFactorial">
-    <configuration name="MainColor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Lesson4.MainColor" />
+  <component name="RunManager" selected="Application.Homework4Ranges">
+    <configuration name="Homework4Quadratics" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HomeWork.Homework4Quadratics" />
       <module name="JavaEasyUM-2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Lesson4.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -67,12 +102,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainFactorial" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Lesson4.MainFactorial" />
+    <configuration name="Homework4Ranges" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HomeWork.Homework4Ranges" />
       <module name="JavaEasyUM-2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Lesson4.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -80,12 +115,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainMax" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Lesson4.MainMax" />
+    <configuration name="Homework4guessNumber (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HomeWork.Homework4guessNumber" />
       <module name="JavaEasyUM-2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Lesson4.*" />
+          <option name="PATTERN" value="HomeWork.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -93,12 +128,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainMethod" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Lesson4.MainMethod" />
+    <configuration name="Homework4guessNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mr.Prog.Homework4guessNumber" />
       <module name="JavaEasyUM-2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Lesson4.*" />
+          <option name="PATTERN" value="mr.Prog.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,12 +141,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTypes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Lesson3.MainTypes" />
+    <configuration name="Homework4guessNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HomeWork.Homework4guessNumber" />
       <module name="JavaEasyUM-2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Lesson3.*" />
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Homework4var2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mr.Prog.Homework4var2" />
+      <module name="JavaEasyUM-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mr.Prog.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,11 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MainFactorial" />
-        <item itemvalue="Application.MainColor" />
-        <item itemvalue="Application.MainMax" />
-        <item itemvalue="Application.MainMethod" />
-        <item itemvalue="Application.MainTypes" />
+        <item itemvalue="Application.Homework4Ranges" />
+        <item itemvalue="Application.Homework4Quadratics" />
+        <item itemvalue="Application.Homework4guessNumber (1)" />
+        <item itemvalue="Application.Homework4guessNumber" />
+        <item itemvalue="Application.Homework4var2" />
       </list>
     </recent_temporary>
   </component>
@@ -141,6 +189,15 @@
       <updated>1580838398697</updated>
     </task>
     <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -170,10 +227,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="175" y="0" key="#Project_Structure" timestamp="1581424627429">
+    <state x="175" y="0" key="#Project_Structure" timestamp="1582034451689">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="175" y="0" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1581424627429" />
+    <state x="175" y="0" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1582034451689" />
     <state x="419" y="149" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581425849562">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -182,22 +239,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="62" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1580840755975" />
-    <state width="1311" height="165" key="GridCell.Tab.0.bottom" timestamp="1581619000462">
+    <state width="1311" height="165" key="GridCell.Tab.0.bottom" timestamp="1582034848562">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1311" height="165" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1581619000462" />
-    <state width="1311" height="165" key="GridCell.Tab.0.center" timestamp="1581619000461">
+    <state width="1311" height="165" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1582034848562" />
+    <state width="1311" height="165" key="GridCell.Tab.0.center" timestamp="1582034848562">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1311" height="165" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1581619000461" />
-    <state width="1311" height="165" key="GridCell.Tab.0.left" timestamp="1581619000461">
+    <state width="1311" height="165" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1582034848562" />
+    <state width="1311" height="165" key="GridCell.Tab.0.left" timestamp="1582034848562">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1311" height="165" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1581619000461" />
-    <state width="1311" height="165" key="GridCell.Tab.0.right" timestamp="1581619000462">
+    <state width="1311" height="165" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1582034848562" />
+    <state width="1311" height="165" key="GridCell.Tab.0.right" timestamp="1582034848562">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1311" height="165" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1581619000462" />
+    <state width="1311" height="165" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1582034848562" />
     <state width="1311" height="208" key="GridCell.Tab.1.bottom" timestamp="1581445853407">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -218,10 +275,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="5" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1580838507153" />
-    <state x="314" y="146" key="com.intellij.ide.util.TipDialog" timestamp="1581437592746">
+    <state x="314" y="146" key="com.intellij.ide.util.TipDialog" timestamp="1582034650021">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="314" y="146" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1581437592746" />
+    <state x="314" y="146" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1582034650021" />
     <state x="0" y="0" key="new project wizard" timestamp="1581007118729">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -242,75 +299,9 @@
       </breakpoints>
     </breakpoint-manager>
   </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/JavaEasyUM_2$Homework4guessNumber.ic" NAME="Homework4guessNumber Coverage Results" MODIFIED="1582034503979" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>mr.Prog.*</FILTER>
+    </SUITE>
   </component>
 </project>
