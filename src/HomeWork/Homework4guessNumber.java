@@ -1,6 +1,6 @@
-package mr.Prog;
+package HomeWork;
 
-import java.util.Scanner;
+import Usefuls.UsefulMethods;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Homework4guessNumber {
@@ -12,7 +12,7 @@ public class Homework4guessNumber {
         System.out.println("Привет! Я - Компик =) Давай поиграем?\n\nЯ загадал целое число от 1 до 100\nПопробуй отгадать, а я подскажу ;)");
 
         int compicNumber = ThreadLocalRandom.current().nextInt(1, 101);
-        int humanNumber = waitInt();
+        int humanNumber = UsefulMethods.waitInt();
         int counter = 1;
 
         while (humanNumber != compicNumber) {
@@ -21,32 +21,10 @@ public class Homework4guessNumber {
             } else {
                 System.out.println("Моё число больше");
             }
-            humanNumber = waitInt();
+            humanNumber = UsefulMethods.waitInt();
             counter++;
         }
         System.out.println("Ура! Ты угадал!\nМоё число " + compicNumber
                 + "\n\nКоличество твоих попыток: " + counter);
-    }
-
-    public static int waitInt() {
-        Scanner in = new Scanner(System.in);
-
-        String inputString = in.nextLine();
-
-        //todo как сократить parseInt()?
-        while (!(isInt(inputString))) {
-            System.out.println("Вы ввели число некорректно!\nПожалуйста, повторите ввод");
-            inputString = in.nextLine();
-        }
-        return Integer.parseInt(inputString);
-    }
-
-    public static boolean isInt(String string) {
-        try {
-            Integer.parseInt(string);
-        } catch (Exception e) {
-            return false;
-        }
-        return true;
     }
 }
