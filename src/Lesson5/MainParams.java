@@ -16,13 +16,13 @@ public class MainParams {
         System.out.println("After = " + Arrays.toString(b));
 
     }
-    static void byValue(int a)
+    static void byValue(int a) //по значению
     {
         System.out.println("byValue = " + a);
         a = 5;
     }
 
-    static void byRef(int[] a)
+    static void byRef(int[] a) //по ссылке
     {
         System.out.println("byRef = " + Arrays.toString(a));
         a[0] = -1;
