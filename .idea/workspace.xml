@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d094e78-b847-4ffa-8ec5-09ce95046645" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaEasyUM-2/HomeWork/Homework4Ranges.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaEasyUM-2/HomeWork/Homework4Ranges.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomeWork/HWTasks" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeWork/HWTasks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/HomeWork/Homework4Ranges.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeWork/Homework4Ranges.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -76,8 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/HomeWork/HWTasks">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+            <state relative-caret-position="494">
+              <caret line="70" column="8" lean-forward="true" selection-start-line="48" selection-end-line="70" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -94,8 +93,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/HomeWork/Homework4Ranges.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+            <state relative-caret-position="151">
+              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#91#92#0" expanded="true" />
@@ -154,9 +153,9 @@
         <option value="$PROJECT_DIR$/src/HomeWork/UsefulMethods.java" />
         <option value="$PROJECT_DIR$/src/UsefulMethods.java" />
         <option value="$PROJECT_DIR$/src/HomeWork/Homework4guessNumber.java" />
-        <option value="$PROJECT_DIR$/src/HomeWork/HWTasks" />
         <option value="$PROJECT_DIR$/src/HomeWork/Homework4Sets.java" />
         <option value="$PROJECT_DIR$/src/HomeWork/Homework4Quadratics.java" />
+        <option value="$PROJECT_DIR$/src/HomeWork/HWTasks" />
         <option value="$PROJECT_DIR$/src/HomeWork/Homework4Ranges.java" />
       </list>
     </option>
@@ -594,13 +593,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/HomeWork/HWTasks">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Usefuls/UsefulMethods.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
@@ -619,10 +611,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/HomeWork/HWTasks">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="70" column="8" lean-forward="true" selection-start-line="48" selection-end-line="70" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/HomeWork/Homework4Ranges.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+        <state relative-caret-position="151">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#91#92#0" expanded="true" />
