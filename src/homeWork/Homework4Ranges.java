@@ -1,6 +1,7 @@
 package homeWork;
 
 import usefuls.ConsoleInput;
+
 import java.util.Arrays;
 
 public class Homework4Ranges {
