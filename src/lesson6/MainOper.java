@@ -1,3 +1,4 @@
+//todo сделать удаление эл-та из массива
 package lesson6;
 
 import java.util.Arrays;
@@ -7,7 +8,7 @@ public class MainOper {
         int[] arr = {1, 5, 3, 11, 76, 5};
         System.out.println("arr = " + Arrays.toString(arr));
 
-        int[] arr2 = insert(arr, 3, 15);
+        int[] arr2 = insert(arr, 9, 15);
         System.out.println("arr2 = " + Arrays.toString(arr2));
 
         //вставим новый элемент
