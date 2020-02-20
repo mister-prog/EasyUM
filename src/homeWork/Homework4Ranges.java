@@ -25,54 +25,76 @@ public class Homework4Ranges {
         int[] range2 = inputRange();
         rangeInfo(range2);
 
-        rangeRelations(range1, range2);
+        rangeSummaryInfo(range1, range2);
     }
 
-    public static void rangeRelations(int[] range1, int[] range2) {
+    public static int rangeRelations(int[] range1, int[] range2) {
         int min1 = range1[0];
         int max1 = range1[range1.length - 1];
 
         int min2 = range2[0];
         int max2 = range2[range2.length - 1];
 
-        System.out.println("\n");
+        int rangeRel;
+
         if ((rangeType(range1) == RangeStatus.ILLEGAL) || (rangeType(range2) == RangeStatus.ILLEGAL)) {
-            System.out.println("\nОдин или оба интервала не существуют.\nПоиск пересечений не имеет смысла");
+            rangeRel = -1;
         } else {
-            //rangePrint(range1, range2);
             if (min1 > max2 || min2 > max1) {
-                System.out.println("Интервалы " + rangePrint(range1) + " и " + rangePrint(range2) + " не пересекаются");
+                rangeRel = 0;
             } else {
                 if (min1 < min2) {
                     if (max1 >= max2) {
-                        System.out.println("Интервал " +rangePrint(range1) + " содержит " + rangePrint(range2));
+                        rangeRel = 1;
                     } else {
-                        System.out.println("Интервалы " + rangePrint(range1) + " и " + rangePrint(range2) + " пересекаются");
+                        rangeRel = 3;
                     }
                 } else if (min1 > min2) {
                     if (max1 <= max2) {
-                        System.out.println("Интервал " +rangePrint(range2) + " содержит " + rangePrint(range1));
+                        rangeRel = 2;
                     } else {
-                        System.out.println("Интервалы " + rangePrint(range1) + " и " + rangePrint(range2) + " пересекаются");
-                    }
-                } else if (min1 == min2) {
-                    if (max1 > max2) {
-                        System.out.println("Интервал " +rangePrint(range1) + " содержит " + rangePrint(range2));
-                    } else if (max1 < max2) {
-                        System.out.println("Интервал " +rangePrint(range2) + " содержит " + rangePrint(range1));
-                    } else {
-                        System.out.println("Интервалы идентичны");
+                        rangeRel = 3;
                     }
                 } else {
-                    System.out.println("Где-то у меня косяк в расчетах =(");
+                    if (max1 > max2) {
+                        rangeRel = 1;
+                    } else if (max1 < max2) {
+                        rangeRel = 2;
+                    } else {
+                        rangeRel = 4;
+                    }
                 }
             }
         }
+        return rangeRel;
     }
 
-  /*  public static void rangePrint(int[] range1, int[] range2) {
-        System.out.print("Соотношение интервалов " + Arrays.toString(range1) + " и " + Arrays.toString(range2) + ":\n");
-    }*/
+    public static void rangeSummaryInfo(int[] range1, int[] range2) {
+        int rangeRel = rangeRelations(range1, range2);
+
+        switch (rangeRel) {
+            case 0:
+                System.out.println("\nИнтервалы " + rangePrint(range1) + " и " + rangePrint(range2) + " не пересекаются");
+                break;
+            case 1:
+                System.out.println("\nИнтервал " + rangePrint(range1) + " содержит " + rangePrint(range2));
+                break;
+            case 2:
+                System.out.println("\nИнтервал " + rangePrint(range1) + " содержится в " + rangePrint(range2));
+                break;
+            case 3:
+                System.out.println("\nИнтервалы " + rangePrint(range1) + " и " + rangePrint(range2) + " пересекаются");
+                break;
+            case 4:
+                System.out.println("\nИнтервалы идентичны");
+                break;
+            case -1:
+                System.out.println("\nОдин или оба интервала не существуют.\nПоиск пересечений не имеет смысла");
+                break;
+            default:
+                System.out.println("\nЧто-то пошло не так...");
+        }
+    }
 
     public static String rangePrint(int[] range) {
         return Arrays.toString(range);
