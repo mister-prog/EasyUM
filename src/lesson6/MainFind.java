@@ -5,14 +5,15 @@ import java.util.Arrays;
 public class MainFind {
     public static void main(String[] args) {
         int[] arr = {4, 6, 1, 100, -11, 4, 8, 2, 3, 12, 3, 457, 3, 767, 3, 34, 3, 23, 7};
+        int el = 0;
 
-        System.out.println("Index = " + find(arr, -11) + "\nPosition = " + (find(arr,-11) + 1));
+        System.out.println("Index = " + find(arr, el) + "\nPosition = " + (find(arr,el) + 1));
         System.out.println("Contains = " + contains(arr, 3));
 
         System.out.println("Index = " + find(arr, 599) + "\nPosition = " + (find(arr,500) + 1));
         System.out.println("Contains = " + contains(arr, 599));
 
-        System.out.println("count of element = " + countOfElement(arr,3));
+        System.out.println("count of element = " + countOfElement(arr,el));
 
     }
     //сколько раз элемент входит в массив
