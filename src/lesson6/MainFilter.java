@@ -1,7 +1,5 @@
 package lesson6;
 
-
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class MainFilter {
@@ -12,15 +10,39 @@ public class MainFilter {
 
         replace(arr, 1, elem);
         System.out.println("arr = " + Arrays.toString(arr));
+
+        System.out.println("unique resArr = " + Arrays.toString(unique(arr)));
+
     }
 
     static void replace(int[] arr, int fromValue, int toValue) {
-        for (int i = 0; i < arr.length; i++)
-        {
-            if (arr[i] == fromValue)
-            {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == fromValue) {
                 arr[i] = toValue;
             }
         }
+    }
+
+    //todo обрезать пустые элементы в массиве
+    static int[] unique(int[] arr) {
+        int[] resArr = new int[arr.length];
+        int newLength = 0;
+
+        for (int i = 0; i < arr.length; i++) {
+
+            boolean resultHasValue = false;
+
+            for (int j = 0; j < newLength; j++) {
+                if (resArr[j] == arr[i]) {
+                    resultHasValue = true;
+                    break;
+                }
+            }
+            if (!resultHasValue) {
+                resArr[newLength] = arr[i];
+                newLength++;
+            }
+        }
+        return resArr;
     }
 }
