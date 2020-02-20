@@ -33,7 +33,7 @@ public class Homework4Quadratics {
 
             System.out.println("\nДискриминант больше нуля => два искомых числа:\nx1 = " +  x1 + "\nx2 = " + x2);
 
-        } else if (discrim == 0) {
+        } else {
             double x = b / 2 * a;
             System.out.println("\nДискриминант равен нулю => одно искомое число:\nx1 = x2 = " + x);
         }
