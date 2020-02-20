@@ -11,7 +11,7 @@ Scanner in = new Scanner(System.in);
 System.out.println("Введите оценку фильма (1-5), чтобы узнать рецензию: ");
 String score = in.nextLine();
 ...
-in.close()//закрываем поток
+in.close()//закрываем поток - не нужно, т.к. система сама закрывает
 //-------------------------------------------
 
 //Шаблон функции main()
@@ -19,3 +19,21 @@ in.close()//закрываем поток
     {
     }
 //-------------------------------------------
+//Проверка, является ли введенное число  double или это строка
+ /*
+        while (!(isDouble(inputString))) {
+            System.out.println("Вы ввели число некорректно!\nПожалуйста, повторите ввод");
+            inputString = in.nextLine();
+        }
+        return Double.parseDouble(inputString);*/
+
+           /*public static boolean isDouble(String string) {
+                try {
+                    Double.parseDouble(string);
+                } catch (Exception e) {
+                    return false;
+                }
+                return true;
+            }*/
+ //-------------------------------------------
+
