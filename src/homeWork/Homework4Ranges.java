@@ -1,7 +1,6 @@
 package homeWork;
 
 import usefuls.ConsoleInput;
-
 import java.util.Arrays;
 
 public class Homework4Ranges {
@@ -28,16 +27,16 @@ public class Homework4Ranges {
         rangeSummaryInfo(range1, range2);
     }
 
-    public static int rangeRelations(int[] range1, int[] range2) {
-        int min1 = range1[0];
-        int max1 = range1[range1.length - 1];
+    public static int rangeRelations(int[] r1, int[] r2) {
+        int min1 = r1[0];
+        int max1 = r1[r1.length - 1];
 
-        int min2 = range2[0];
-        int max2 = range2[range2.length - 1];
+        int min2 = r2[0];
+        int max2 = r2[r2.length - 1];
 
         int rangeRel;
 
-        if ((rangeType(range1) == RangeStatus.ILLEGAL) || (rangeType(range2) == RangeStatus.ILLEGAL)) {
+        if ((rangeType(r1) == RangeStatus.ILLEGAL) || (rangeType(r2) == RangeStatus.ILLEGAL)) {
             rangeRel = -1;
         } else {
             if (min1 > max2 || min2 > max1) {
