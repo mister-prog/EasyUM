@@ -1,0 +1,29 @@
+    { //видимость переменных - внутри фигурн. скобок
+        int a = 6;
+        String str = "Hello, Friend!";
+        System.out.println (a);
+    }
+
+    //объявление и сравнение переменных
+     String str = "Result: ";
+            char c = '%';
+            int a = 5;
+            int b = 7;
+            int r = test(5,7);
+
+            boolean cond = true;
+            boolean notCond = !cond;
+            boolean dynCond = a > b;
+
+            System.out.println("Переменная а равна " + a + "\nПеременная b равна " + b
+                    + "\nСумма a и b равна " + (a + b));
+
+            System.out.println("Теперь выводим возвращаемое значение метода sum: " + test(a,b));
+
+
+            if (a > b) {
+                System.out.println("Значение переменной a БОЛЬШЕ значения переменной b");
+            }
+            else {
+                System.out.println("Значение переменной a МЕНЬШЕ или РАВНО значения переменной b");
+            }

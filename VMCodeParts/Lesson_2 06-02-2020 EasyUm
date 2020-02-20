@@ -1,0 +1,71 @@
+//перечисления
+ enum Color { // перечисления
+        GREEN,
+        VIOLET,
+        RED,
+        GOLD
+    }
+
+//------------------------------------------------------------
+//пример с Switch()
+ static void colorText(Color color) {
+        String colorText = "";
+        switch (color) {
+            case GREEN:
+                colorText = "Зелёный";
+                break;
+            case VIOLET:
+                colorText = "Фиолетовый";
+                break;
+            case RED:
+                colorText = "Красный";
+                break;
+            default:
+                colorText = "Голубой";
+        }
+        System.out.print("\nЦвет: " + colorText);
+    }
+
+   //colorText(Color.GREEN); //вызов метода из main()
+  // colorText(Color.GOLD); //вызов метода из main()
+
+  //------------------------------------------------------------
+  //Примеры if-else и switch
+   static void ifAge(int age) {
+          System.out.println("Возраст человека: " + age + " года/лет");
+
+          if (age < 50) {
+              System.out.println("Ребенок");
+              System.out.println("Цвет одежды: зеленый");//1
+          } else if (age < 80) {
+              System.out.println("Подросток");
+              System.out.println("Цвет одежды: фиолетовый");//2
+          } else if (age < 100) {
+              System.out.println("Взрослый");
+              System.out.println("Цвет одежды: красный");//3
+          } else {
+              System.out.println("Вот ты долгожитель!");
+          }
+      }
+
+      static void caseAge(int colorCode) {
+          String colorText = "";
+          switch (colorCode) {
+              case 1:
+                  colorText = "Зелёный";
+                  break;
+              case 2:
+                  colorText = "Фиолетовый";
+                  break;
+              case 3:
+                  colorText = "Красный";
+                  break;
+              default:
+                  colorText = "Голубой";
+          }
+          System.out.print("Цвет: " + colorText);
+      }
+
+      // ifAge(23); //вызов метода из main()
+      // caseAge(2);//вызов метода из main()
+//------------------------------------------------------------
