@@ -6,66 +6,10 @@ import static usefuls.ConsoleInput.waitInt;
 
 public class Homework6EqElems {
     public static void main(String[] args) {
-        arraysEqualElems();
+        resultArray();
     }
 
-    static void arraysEqualElems() {
-        System.out.println("Введите два массива");
-
-        int[] arr1 = inputArr();
-        System.out.print("Вы ввели первый массив " + Arrays.toString(arr1) + "\n");
-
-        int[] arr2 = inputArr();
-        System.out.print("Вы ввели второй массив " + Arrays.toString(arr2) + "\n");
-
-        /* System.out.print("Общие элементы массивов " + Arrays.toString(arr1) + " и " + Arrays.toString(arr2) + ":\n" + Arrays.toString(equalElems(arr1, arr2)));*/
-        equalElems(arr1, arr2);
-    }
-
-    static void equalElems(int[] arr1, int[] arr2) {
-        int counter;
-        if (arr1.length >= arr2.length) {
-            findCounter(arr1, arr2);
-        } else {
-            findCounter(arr2, arr1);
-        }
-        //System.out.println("counter = " + counter);
-    }
-
-
-    static void findCounter(int[] arr1, int[] arr2) {
-        int counter = 0;
-
-        for (int i = 0; i < arr1.length; i++) {
-            // System.out.print("i = " + i + " ");
-            for (int j = 0; j < arr2.length; j++) {
-                // System.out.print("j = " + j + " ");
-                if (arr1[i] == arr2[j]) {
-                    // System.out.println("i = " + i + ", arr1[i] = " + arr1[i] + "\nj = "
-                    //         + j + ", arr2[j] = " + arr2[j]);
-                    counter++;
-                }
-            }
-        }
-
-        int[] midArr = new int[counter];
-
-        for (int j = 0; j < arr1.length; j++) {
-            // System.out.print("i = " + i + " ");
-            for (int h = 0; h < arr2.length; h++) {
-                // System.out.print("j = " + j + " ");
-                if (arr1[j] == arr2[h]) {
-                    for(int i = 0; i < counter; i++)
-                    {
-                        midArr[i] = arr2[h];//todo почему элементы не фиксятся
-                    }
-                }
-            }
-        }
-
-        System.out.println("New array = " + Arrays.toString(midArr));
-    }
-
+    //вводит массив
     static int[] inputArr() {
         System.out.println("\nВведите кол-во элементов нового массива: ");
         int arrLength = waitInt();
@@ -81,7 +25,85 @@ public class Homework6EqElems {
             System.out.print("arr[" + i + "] = ");
             arr[i] = waitInt();
         }
+
+        System.out.println("\nВы ввели массив: " + Arrays.toString(arr));
         return arr;
     }
+
+    //Возвращает массив уникальных значений
+    static int[] uniqueElemsArr(int[] arr) {
+        int count = 0;
+        int[] midArr = new int[arr.length];
+
+        for (int i = 0; i < midArr.length; i++) {
+            boolean resultHasValue = false;
+
+            for (int j = 0; j < count; j++) {
+                if (midArr[j] == arr[i]) {
+                    resultHasValue = true;
+                    break;
+                }
+            }
+            if (!resultHasValue) {
+                midArr[count] = arr[i];
+                count++;
+            }
+        }
+
+        int[] resultArr = new int[count];
+        for (int i = 0; i < count; i++) {
+            resultArr[i] = midArr[i];
+        }
+        //System.out.println("Result arr = " + Arrays.toString(resultArr));
+        return resultArr;
+    }
+
+
+    static void resultArray() {
+        int[] arr1 = uniqueElemsArr(inputArr());
+        int[] arr2 = uniqueElemsArr(inputArr());
+
+        if (arr1.length >= arr2.length) {
+            sameElements(arr1, arr2);
+        } else {
+            sameElements(arr2, arr1);
+        }
+    }
+
+    //сравнивает два массива, выводит уникальные пересечения
+    static void sameElements(int[] arr1, int[] arr2) {
+
+        int counter = 0;
+
+        for (int i = 0; i < arr1.length; i++) {
+            for (int j = 0; j < arr2.length; j++) {
+                if (arr1[i] == arr2[j]) {
+                    counter++;
+                }
+            }
+        }
+
+        //todo придумать, как упростить метод: сначала - считаем одинаковые, затем - создаем массив, сохраняя одинаковые
+
+        int[] midArr = new int[counter];
+        int h = 0;
+
+        System.out.println("counter = " + counter);
+
+        while(h < counter) {
+            for (int i = 0; i < arr1.length; i++) {
+                for (int j = 0; j < arr2.length; j++) {
+
+                    if (arr1[i] == arr2[j]) {
+                        midArr[h] = arr2[j];
+                        h++;
+                    }
+
+                }
+            }
+        }
+        System.out.println("Уникальные элементы, существующие в обоих массивах: " + Arrays.toString(midArr));
+    }
 }
+
 
