@@ -32,6 +32,7 @@ public class MainSeaBattle {
         //todo ограничить тремя попытками
 
         do{
+            System.out.println();
             byte[] userPoint = inputUserPoint();
             System.out.println("user point: " + Arrays.toString(userPoint));
             break;
@@ -47,7 +48,7 @@ public class MainSeaBattle {
         byte[] point = new byte[2];
 
         do {
-            System.out.print("Ваш ход:");
+            System.out.print("Ваш ход: ");
             String str = in.nextLine();
             System.out.println("ход " + str);
             if (str.length() != 2) {
@@ -63,12 +64,12 @@ public class MainSeaBattle {
             }
 
             char symbol = str.charAt(0);
-            if(symbol < 'A' || symbol > 'I')
+            if(symbol < 'a' || symbol > 'i')
             {
-                System.out.println("Неверный символ: от A до I " + symbol);
+                System.out.println("Неверный символ: от a до i " + symbol);
                 continue;
             }
-            point[0] = (byte)(symbol - 'A') ;
+            point[0] = (byte)(symbol - 'a') ;
             point[1] = (byte)(number - '1');
             break;
         } while (true);
