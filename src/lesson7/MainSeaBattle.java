@@ -73,9 +73,6 @@ public class MainSeaBattle {
             point[1] = (byte)(number - '1');
             break;
         } while (true);
-
-
-
         return point;
     }
 
@@ -134,4 +131,6 @@ public class MainSeaBattle {
             System.out.println();
         }
     }
+
+
 }
