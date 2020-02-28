@@ -41,4 +41,23 @@ public class ConsoleInput {
         } while (!isInt);
         return Integer.parseInt(inputString);
     }
+
+    public static float waitFloat() {
+        Scanner in = new Scanner(System.in);
+
+        String inputString = in.nextLine();
+        boolean isFloat;
+
+        do {
+            try {
+                Float.parseFloat(inputString);
+                isFloat = true;
+            } catch (Exception e) {
+                isFloat = false;
+                System.out.println("Вы ввели число некорректно!\nПожалуйста, повторите ввод");
+                inputString = in.nextLine();
+            }
+        } while (!isFloat);
+        return  Float.parseFloat(inputString);
+    }
 }
