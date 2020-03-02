@@ -21,7 +21,7 @@ public class MainTour {
         tour.country = "Spain";
         tour.price = 30;
 
-        Tour[] tours = new Tour[10]; //несколько туров
+        Tour[] tours = new Tour[3]; //несколько туров
         tours[0] = tour;
         //System.out.println("Наши туры:\n" + Arrays.toString(tours));
 

@@ -22,7 +22,7 @@ public class hw8Dairy {
         do {
             printLn("Выберите действие:");
             printLn("1 - Добавить запись");
-            printLn("2 - Показать записи (7 последних)");
+            printLn("2 - Показать записи");
             printLn("3 - Найти запись");
             printLn("4 - Удалить запись");
             printLn("0 - Выход");
@@ -31,8 +31,7 @@ public class hw8Dairy {
             byte item = getNumInfo();
             switch (item) {
                 case 1:
-                    Dairy newNote = createNote(note);
-                    addNote(notes, newNote);
+                    addNote(notes);
                     break;
                 case 2:
                     showNotes(notes);
@@ -81,7 +80,8 @@ public class hw8Dairy {
         printLn("Баланс дня: " + note.balance);
     }
 
-    private static Dairy createNote(Dairy note) {
+    private static Dairy createNote() {
+        Dairy note = new Dairy();
         note.currentDate = new Date();
 
         printLn("Введите название записи: ");
@@ -138,15 +138,17 @@ public class hw8Dairy {
         while (true);
     }
 
-    static void addNote(Dairy[] notes, Dairy newNote) { //todo Почему перезаписываются записи?!
+    static void addNote(Dairy[] notes) { //todo ПЕРЕПИСАТЬ. Не блокируется, если дневник переполнен
+        Dairy newNote = new Dairy();
         for (byte i = 0; i < notes.length; i++) {
             if (notes[i] == null) {
-                notes[i] = newNote;
+                notes[i] = createNote();
                 return;
             }
         }
         printLn("Дневник переполнен\nУдалите какую-либо запись для добавления новой");
     }
+
 
     static byte getNumInfo() {
         Scanner in = new Scanner(System.in);
