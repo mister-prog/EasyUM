@@ -23,7 +23,7 @@ public class hw8Dairy {
             printLn("Выберите действие:");
             printLn("1 - Добавить запись");
             printLn("2 - Показать записи");
-            printLn("3 - Найти и дополнить запись");
+            printLn("3 - Найти запись");
             printLn("4 - Удалить запись");
             printLn("0 - Выход");
             cursor();
@@ -70,7 +70,7 @@ public class hw8Dairy {
         if (i != -1) {
             notes[i] = null;
             printLn("Запись удалена"); //todo Почему удаляет все последующие записи?
-            showNotes(notes);
+            //showNotes(notes);
         }
     }
 
@@ -100,7 +100,7 @@ public class hw8Dairy {
                 continue;
             }
             printLn("-------------------------------");
-            //showNote(note);
+            showNote(note);
         }
     }
 
