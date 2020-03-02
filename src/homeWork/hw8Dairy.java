@@ -25,6 +25,7 @@ public class hw8Dairy {
             printLn("2 - Показать записи");
             printLn("3 - Найти запись");
             printLn("4 - Удалить запись");
+            printLn("5 - Дополнить описание записи");
             printLn("0 - Выход");
             cursor();
 
@@ -44,10 +45,10 @@ public class hw8Dairy {
                 case 4:
                     deleteNote(notes);
                     break;
-                /*case 5:
+                case 5:
                     //todo сделать findAndChange();
-                    findAndChangeNote();
-                    break;*/
+                    ExpandNote(notes);
+                    break;
                 case 0:
                     return;
                 default:
@@ -56,6 +57,35 @@ public class hw8Dairy {
             printLn("");
         }
         while (true);
+    }
+
+    static void printStripe()
+    {
+        printLn("-------------------------------");
+    }
+
+    static void printDesc(Dairy[] notes, byte i)
+    {
+        printLn("\n");
+        printStripe();
+        printLn("\"" + notes[i].description + "\"");
+        printStripe();
+        printLn("\n");
+    }
+
+    private static void ExpandNote(Dairy[] notes) {
+        byte i = findNoteByNum(notes);
+        if (i != -1) {
+            printLn("Вы дополняете информацию...");
+            printDesc(notes, i);
+            printLn("Введите текст-дополнение: ");
+
+            String  expDescriprtion = getStringInfo();
+            notes[i].description = notes[i].description + "\n" + expDescriprtion;
+
+            printLn("Новое описание: ");
+            printDesc(notes, i);
+        }
     }
 
     private static void findNote(Dairy[] notes) {
@@ -99,7 +129,7 @@ public class hw8Dairy {
             if (note == null) {
                 continue;
             }
-            printLn("-------------------------------");
+            printStripe();
             showNote(note);
         }
     }
