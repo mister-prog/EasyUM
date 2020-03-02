@@ -23,7 +23,7 @@ public class hw8Dairy {
             printLn("Выберите действие:");
             printLn("1 - Добавить запись");
             printLn("2 - Показать записи");
-            printLn("3 - Найти запись");
+            printLn("3 - Найти и дополнить запись");
             printLn("4 - Удалить запись");
             printLn("0 - Выход");
             cursor();
@@ -36,21 +36,48 @@ public class hw8Dairy {
                 case 2:
                     showNotes(notes);
                     break;
-               /* case 3:
-                    findNote();
-                    break; // поиск по - эмоции, дате, названию
+                case 3:
+                    //todo сделать поиск - по дате, названию, настроению, +/- бюджету и т.п.
+                    findNote(notes);
+                    break;
                 case 4:
                     deleteNote();
+                    break;
+                /*case 5:
+                    //todo сделать findAndChange();
+                    findAndChangeNote();
                     break;*/
                 case 0:
                     return;
                 default:
                     printLn("Некорректное значение!");
-
             }
             printLn("");
         }
         while (true);
+    }
+
+    private static void findNote(Dairy[] notes) {
+        printLn("Введите название записи для поиска: ");
+        String noteName = getStringInfo();
+        boolean isNote = false;
+
+        for (byte i = 0; i < notes.length; i++) {
+            if (notes[i] != null) {
+                isNote = true;
+                if (notes[i].name.equalsIgnoreCase(noteName)) {
+                    showNote(notes[i]);
+                }
+                else
+                {
+                    isNote = false;
+                }
+            }
+        }
+        if (!(isNote)) {
+            printLn("Такой записи не существует");
+        }
+
     }
 
     private static void showNotes(Dairy[] notes) {
@@ -138,8 +165,7 @@ public class hw8Dairy {
         while (true);
     }
 
-    static void addNote(Dairy[] notes) { //todo ПЕРЕПИСАТЬ. Не блокируется, если дневник переполнен
-        Dairy newNote = new Dairy();
+    static void addNote(Dairy[] notes) {
         for (byte i = 0; i < notes.length; i++) {
             if (notes[i] == null) {
                 notes[i] = createNote();
