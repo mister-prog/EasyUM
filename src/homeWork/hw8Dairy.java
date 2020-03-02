@@ -39,9 +39,10 @@ public class hw8Dairy {
                 case 3:
                     //todo сделать поиск - по дате, названию, настроению, +/- бюджету и т.п.
                     findNote(notes);
+
                     break;
                 case 4:
-                    deleteNote();
+                    deleteNote(notes);
                     break;
                 /*case 5:
                     //todo сделать findAndChange();
@@ -58,35 +59,48 @@ public class hw8Dairy {
     }
 
     private static void findNote(Dairy[] notes) {
+        byte i = findNoteByNum(notes);
+        if (i != -1) {
+            showNote(notes[i]);
+        }
+    }
+
+    private static void deleteNote(Dairy[] notes) {
+        byte i = findNoteByNum(notes);
+        if (i != -1) {
+            notes[i] = null;
+            printLn("Запись удалена"); //todo Почему удаляет все последующие записи?
+            showNotes(notes);
+        }
+    }
+
+    private static byte findNoteByNum(Dairy[] notes) {
         printLn("Введите название записи для поиска: ");
         String noteName = getStringInfo();
         boolean isNote = false;
 
         for (byte i = 0; i < notes.length; i++) {
-            if (notes[i] != null) {
-                isNote = true;
+            if (notes[i] == null) {
+                isNote = false;
+            } else {
                 if (notes[i].name.equalsIgnoreCase(noteName)) {
-                    showNote(notes[i]);
-                }
-                else
-                {
-                    isNote = false;
+                    return i;
                 }
             }
         }
         if (!(isNote)) {
-            printLn("Такой записи не существует");
+            printLn("Такой записи не существует!");
         }
-
+        return -1;
     }
 
     private static void showNotes(Dairy[] notes) {
         for (Dairy note : notes) {
             if (note == null) {
-                break;
+                continue;
             }
             printLn("-------------------------------");
-            showNote(note);
+            //showNote(note);
         }
     }
 
