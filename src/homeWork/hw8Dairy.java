@@ -26,6 +26,7 @@ public class hw8Dairy {
             printLn("3 - Найти запись");
             printLn("4 - Удалить запись");
             printLn("5 - Дополнить описание записи");
+            printLn("6 - Изменить запись");
             printLn("0 - Выход");
             cursor();
 
@@ -38,16 +39,17 @@ public class hw8Dairy {
                     showNotes(notes);
                     break;
                 case 3:
-                    //todo сделать поиск - по дате, названию, настроению, +/- бюджету и т.п.
-                    findNote(notes);
 
+                    findNote(notes);
                     break;
                 case 4:
                     deleteNote(notes);
                     break;
                 case 5:
-                    //todo сделать findAndChange();
                     ExpandNote(notes);
+                    break;
+                case 6:
+                    findAndChange(notes);
                     break;
                 case 0:
                     return;
@@ -59,13 +61,64 @@ public class hw8Dairy {
         while (true);
     }
 
-    static void printStripe()
-    {
+    private static void findAndChange(Dairy[] notes) {
+        //1. найти запись
+        //2. выбрать, какое поле исправлять
+        //3. внести изменения (заменить текст)
+
+        byte i = findNoteByNum(notes);
+        if (i != -1) {
+            do {
+                printLn("Какое поле вы хотите изменить?");
+                printLn("1 - Название записи");
+                printLn("2 - Настроение");
+                printLn("3 - Физическое состояние");
+                printLn("4 - Мысль дня");
+                printLn("5 - Описание дня");
+                printLn("6 - Было потрачено");
+                printLn("7 - Было получено");
+                printLn("0 - Отмена");
+                cursor();
+
+                byte fieldNum = getNumInfo();
+
+                switch (fieldNum) {
+                    case 1:
+                        notes[i].name = getStringInfo();
+                        break;
+                    case 2:
+                        notes[i].emotion = chooseEmotion();
+                        break;
+                    case 3:
+                        notes[i].physicalState = getState();
+                        break;
+                    case 4:
+                        notes[i].mainIdea = getStringInfo();
+                        break;
+                    case 5:
+                        notes[i].description = getStringInfo();
+                        break;
+                    case 6:
+                        notes[i].moneyMinus = waitFloat();
+                        break;
+                    case 7:
+                        notes[i].moneyPlus = waitFloat();
+                        break;
+                    case 0:
+                        return;
+                    default:
+                        printLn("Некорректное значение!");
+                }
+            }
+            while (true);
+        }
+    }
+
+    static void printStripe() {
         printLn("-------------------------------");
     }
 
-    static void printDesc(Dairy[] notes, byte i)
-    {
+    static void printDesc(Dairy[] notes, byte i) {
         printLn("\n");
         printStripe();
         printLn("\"" + notes[i].description + "\"");
@@ -80,7 +133,7 @@ public class hw8Dairy {
             printDesc(notes, i);
             printLn("Введите текст-дополнение: ");
 
-            String  expDescriprtion = getStringInfo();
+            String expDescriprtion = getStringInfo();
             notes[i].description = notes[i].description + "\n" + expDescriprtion;
 
             printLn("Новое описание: ");
@@ -161,7 +214,7 @@ public class hw8Dairy {
         printLn("Выберите настроение дня: ");
         note.emotion = chooseEmotion();
 
-        printLn("Введите физическое состояние (1...5): ");
+        printLn("Введите физическое состояние: ");
         note.physicalState = getState();
 
         printLn("Введите идею дня: ");
@@ -182,6 +235,7 @@ public class hw8Dairy {
     static byte getState() {
         byte state;
         do {
+            printLn("1...5");
             cursor();
             state = (byte) (waitInt());
         }
