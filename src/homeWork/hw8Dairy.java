@@ -62,10 +62,6 @@ public class hw8Dairy {
     }
 
     private static void findAndChange(Dairy[] notes) {
-        //1. найти запись
-        //2. выбрать, какое поле исправлять
-        //3. внести изменения (заменить текст)
-
         byte i = findNoteByNum(notes);
         if (i != -1) {
             do {
@@ -152,8 +148,7 @@ public class hw8Dairy {
         byte i = findNoteByNum(notes);
         if (i != -1) {
             notes[i] = null;
-            printLn("Запись удалена"); //todo Почему удаляет все последующие записи?
-            //showNotes(notes);
+            printLn("Запись удалена");
         }
     }
 
