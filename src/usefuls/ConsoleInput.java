@@ -60,4 +60,10 @@ public class ConsoleInput {
         } while (!isFloat);
         return  Float.parseFloat(inputString);
     }
+    public static String waitString()
+    {
+        Scanner in = new Scanner(System.in);
+        String  str = in.nextLine();
+        return str;
+    }
 }
