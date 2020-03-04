@@ -1,4 +1,4 @@
-package homeWork;
+package homeWork.hw7;
 
 import java.util.Arrays;
 import java.util.Scanner;

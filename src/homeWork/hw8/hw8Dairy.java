@@ -1,4 +1,4 @@
-package homeWork;
+package homeWork.hw8;
 
 import java.text.SimpleDateFormat;
 import java.util.Scanner;
