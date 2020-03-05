@@ -13,9 +13,10 @@ public class Hw9Strings {
 
         String str = waitString();
 
+        //String str = "       сТроКА дЛя провЕрКи удАлЕНИя пРоБеЛов ПЕРед и пОСлЕ сТрОки, оТОбражЕниЯ в нИжНЕм рЕГистрЕ всЕй стРоКи, крОме пЕрвОЙ буКвЫ               ";
+
         print("");
         print("Итоговая строка:\n" + resultString(str));
-
     }
 
     private static void print(String string) {
@@ -23,8 +24,9 @@ public class Hw9Strings {
     }
 
     private static String resultString(String text) {
-        return text.trim()
-                .substring(0,1)
+        return text
+                .trim()
+                .substring(0, 1)
                 .toUpperCase()
                 .concat(text
                         .trim()
