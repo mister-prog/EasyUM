@@ -11,7 +11,11 @@ public class MainAnimal {
 
         //soundOf(animal);
         soundOf(dog);
+        dogSound((Dog)dog);// без (Dog) не работает, т.к. от частного к общему не получится, надо приводить типы
+    }
 
+    static void dogSound(Dog dog)
+    {
 
     }
 
