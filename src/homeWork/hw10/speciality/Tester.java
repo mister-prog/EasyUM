@@ -18,10 +18,10 @@ public class Tester extends Person {
     @Override
     public String toString() {
         return "Tester{" +
-                " name='" + name + '\'' +
-                ", inn='" + inn + '\'' +
-                ", profession='" + profession + '\'' +
-                ", speciality='" + specialities[i] +
+                "name ='" + name + '\'' +
+                ", inn ='" + inn + '\'' +
+                ", profession ='" + profession + '\'' +
+                ", speciality ='" + specialities[i] + '\'' +
                 '}';
     }
 }

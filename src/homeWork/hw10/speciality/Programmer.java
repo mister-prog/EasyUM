@@ -15,10 +15,10 @@ public class Programmer extends Person {
     @Override
     public String toString() {
         return "Proger{" +
-                " name='" + name + '\'' +
-                ", inn='" + inn + '\'' +
-                ", profession='" + profession + '\'' +
-                ", speciality='" + specialities[i] +
+                "name = '" + name + '\'' +
+                ", inn = '" + inn + '\'' +
+                ", profession = '" + profession + '\'' +
+                ", speciality = '" + specialities[i] + '\'' +
                 '}';
     }
 }
