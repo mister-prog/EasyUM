@@ -1,5 +1,6 @@
 package homeWork.hw10;
 
+import homeWork.hw10.speciality.Person;
 import homeWork.hw10.speciality.Programmer;
 import homeWork.hw10.speciality.Tester;
 
@@ -12,6 +13,8 @@ public class MainPerson {
 
         Programmer prog = new Programmer("Смирнов Андрей", "FU05646546568");
         System.out.println(prog.toString());
+
+
 
     }
 }

@@ -4,8 +4,8 @@ import static usefuls.ConsoleInput.waitString;
 
 public class Person {
 
-    String name;
-    String inn;
+    protected String name;
+    protected String inn;
 
     public String getName() {
         return name;
