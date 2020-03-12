@@ -20,7 +20,7 @@ public class MainObject {
 
         assertTrue(a.equals(a) == true, "Нарушена рефлексия"); // рефлексия
         assertTrue(a.equals(b) == b.equals(a), "Нарушена симметричность"); // симметричность
-        assertTrue(a.equals(c) && b.equals(c) && a.equals(b), "Нарушена транзитивность"); //== true;//транзитивность
+        assertTrue(a.equals(c) && b.equals(c) && a.equals(b) == true, "Нарушена транзитивность"); //== true;//транзитивность
         assertTrue(a.equals(null) == false, "Нулевой объект");//null
         //постоянство сравнения во времени, если объекты не менялись
 
