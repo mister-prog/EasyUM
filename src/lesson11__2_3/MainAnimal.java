@@ -2,16 +2,16 @@ package lesson11__2_3;
 
 public class MainAnimal {
     public static void main(String[] args) {
-        Animal[] animals = {new Dog(), new Cat(), new Raven(), new Fish()};
+        Animal[] animals = {new Dog(), new Cat(), new Raven(), new Fish(), new Dove()};
 
         for (Animal el : animals) {
             el.printInfo();
             if (el instanceof IRunnableAnimal) {
                 IRunnableAnimal runnable = (IRunnableAnimal) el;
-                System.out.println("Бегает со скоростью " + runnable.getSpeed() + " километров в час ");
+                //System.out.println("Бегает со скоростью " + runnable.getSpeed() + " километров в час ");
                 System.out.println("LL-LL");
             }
-            if (el instanceof FlyableAnimal) {
+            if (el instanceof IFlyableAnimal) {
 
                 System.out.println("/U\\");
             }
@@ -21,7 +21,6 @@ public class MainAnimal {
             }
             System.out.println("-------------------------------------------");
         }
-
     }
 }
 

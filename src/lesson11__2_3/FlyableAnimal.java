@@ -1,6 +1,6 @@
 package lesson11__2_3;
 
-public abstract class FlyableAnimal extends Animal{
+public abstract class FlyableAnimal extends Animal implements IFlyableAnimal{
 
     private int distance;
 
