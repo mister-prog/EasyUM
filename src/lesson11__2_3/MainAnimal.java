@@ -2,7 +2,7 @@ package lesson11__2_3;
 
 public class MainAnimal {
     public static void main(String[] args) {
-        Animal[] animals = {new Dog(), new Cat(), new Raven()};
+        Animal[] animals = {new Dog(), new Cat(), new Raven(), new Fish()};
 
         for (Animal el : animals) {
             el.printInfo();
@@ -15,9 +15,15 @@ public class MainAnimal {
 
                 System.out.println("/U\\");
             }
+            else if (el instanceof SweemableAnimal) {
+
+                System.out.println(">=O>");
+            }
             System.out.println("-------------------------------------------");
         }
 
     }
 }
+
+// TODO: 10.03.2020 Чем отличаются абстрактный класс и интерфейс? 
 
