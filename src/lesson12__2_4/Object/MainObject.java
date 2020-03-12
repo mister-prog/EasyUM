@@ -24,6 +24,8 @@ public class MainObject {
         assertTrue(a.equals(null) == false, "Нулевой объект");//null
         //постоянство сравнения во времени, если объекты не менялись
 
+        assertTrue(a.hashCode() == b.hashCode(), "Объекты равны, а hash-коды нет");
+
         System.out.println("Равны ли? " + a.equals(b));
     }
 
