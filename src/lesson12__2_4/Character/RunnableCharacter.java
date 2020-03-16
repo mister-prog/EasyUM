@@ -1,4 +1,4 @@
-package lesson12__2_4;
+package lesson12__2_4.Character;
 
 public class RunnableCharacter implements AnimalCharacter {
     private final int speed;
@@ -9,7 +9,7 @@ public class RunnableCharacter implements AnimalCharacter {
 
     @Override
     public void printInfo() {
-        System.out.println("А я могу бегать со скоростью " + speed + " км/ч");
+        System.out.println("Бегаю со скоростью " + speed + " км/ч");
     }
 
     @Override
